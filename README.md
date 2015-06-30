@@ -1,7 +1,10 @@
 # phptoword
 php export word
+
 I make this just for php export to word
+
 First I just use MIME like follow:
+
   $filename = 'my.doc';
   $url = 'http://xxxx';
   $html = file_get_contents($url, 5);
