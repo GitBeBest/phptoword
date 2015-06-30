@@ -60,7 +60,7 @@ class PHPToWord{
             if ( @fopen($image , 'r') )
             {
                 $imgcontent = @file_get_contents( $image );
-                if ( $content )
+                if ($imgcontent )
                     $mht->AddContents($files[$i],$mht->GetMimeType($image),$imgcontent);
             }
             else
