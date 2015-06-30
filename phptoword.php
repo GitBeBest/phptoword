@@ -20,6 +20,7 @@ class PHPToWord{
         ob_end_flush();
     }
     
+    //used from http://blog.csdn.net/samxx8/article/details/6601175 thanks
     public function getWordDocument( $content , $absolutePath = "" , $isEraseLink = true ) {
         $mht = new MhtFileMaker();
         if ($isEraseLink)
